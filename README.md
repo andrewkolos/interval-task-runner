@@ -1,6 +1,6 @@
 # IntervalTaskRunner
 
-Repeatedly executes a function with a minimum time delay between reach call (with millisecond precision).
+Repeatedly executes a function with a minimum time delay between reach call (with millisecond precision). Written in TypeScript.
 
 # Installation and Usage
 
