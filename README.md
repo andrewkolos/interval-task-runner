@@ -16,11 +16,11 @@ import { IntervalTaskRunner, Interval } from 'interval-task-runner';
 const task = () => console.log('foo'); // The task to run.
 
 // example 1
-const interval = Interval.fromHz(10); // Run task approx. 10 times-a-second.
+const interval = Interval.fromHz(10); // Run task approx. 10 times per second.
 const runner = new IntervalTaskRunner(task, interval);
-runner.start();
+runner.start(); // Now printing 'foo' ~10 times per second.
 // Later...
-runner.stop();
+runner.stop(); // No longer printing 'foo'.
 
 // example 2
 const interval = Interval.fromMs(100); // Run task approx. every 100 milliseconds (or 10 Hz).

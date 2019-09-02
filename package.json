@@ -10,7 +10,8 @@
     "test:debug": "node --inspect-brk=0.0.0.0 node_modules/jest/bin/jest.js --runInBand --config jest.config.js --forceExit"
   },
   "keywords": [],
-  "author": "",
+  "author": "Andrew Kolos",
+  "repository": {"url": "https://github.com/andrewkolos/interval-task-runner"},
   "license": "MIT",
   "dependencies": {
     "@types/dedent": "^0.7.0",
