@@ -1,10 +1,11 @@
 {
   "name": "interval-task-runner",
-  "version": "1.0.3",
-  "main": "build/index.js",
+  "version": "1.0.6",
+  "main": "build/es5/index.js",
+  "module": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && tsc --outDir build/es5/ --m commonjs",
     "doc": "typedoc --theme markdown --excludeExternals --excludePrivate --excludeNotExported",
     "test": "jest --verbose --forceExit",
     "test:debug": "node --inspect-brk=0.0.0.0 node_modules/jest/bin/jest.js --runInBand --config jest.config.js --forceExit",
